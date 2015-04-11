@@ -21,12 +21,12 @@
   
 	<body> 
   
-		<div class="container-fluid">
-		<div class="row">
+		<div class="container">
+	
 			<?php
-				include("/php/champion_data.php");
+				include("/php/main_load.php");
 			?>
-		</div>
+			
 		</div>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
