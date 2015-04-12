@@ -24,7 +24,7 @@
 		<div class="container">
 	
 			<?php
-				include("/php/main_load.php");
+				include("php/main_load.php");
 			?>
 			
 		</div>

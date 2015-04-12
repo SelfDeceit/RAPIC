@@ -2,17 +2,12 @@
 	include("champion_data.php");
 	
 	$DATA = $CHAMPION_INFO['data'];
-	
+	$MAIN_CODE = "";
 	foreach ($CHAMPION_API_KEY_NAMES as $champion)
 	{
-	//Bard doesn't work so gotta find an image for him later. Zed for now.
-		if ($champion == "Bard")
-		{
-			$champion = "Zed";
-		}
-		echo "<a href=\"#\"><img src=\"http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/" .
+		$MAIN_CODE = $MAIN_CODE . "<a href=\"#\"><img src=\"http://ddragon.leagueoflegends.com/cdn/5.6.1/img/champion/" .
 			$DATA[$champion]['key'] .
-			".png\" class=\"img-thumbnail\"
-			width=\"65\" height=\"65\"></a>";
+			".png\" width=\"60\" height=\"60\"></a>";
 	}
+	echo $MAIN_CODE;
 ?>
